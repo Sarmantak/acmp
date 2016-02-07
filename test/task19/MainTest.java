@@ -19,6 +19,6 @@ public class MainTest {
         ByteArrayInputStream in = new ByteArrayInputStream(inputStr.getBytes(StandardCharsets.UTF_8));
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         Main.init(in, out);
-        assertEquals("0", out.toString());
+        assertEquals("29", out.toString());
     }
 }
