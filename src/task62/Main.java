@@ -2,6 +2,7 @@ package task62;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
