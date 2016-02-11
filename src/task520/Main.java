@@ -16,17 +16,17 @@ public class Main {
     public static void init(InputStream in, OutputStream out) {
         Scanner sc = new Scanner(in);
         PrintWriter wr = new PrintWriter(out);
-        long n = sc.nextInt();
-        long a = n/(12*12);
-        long r = n%(12*12);
-        long b = 0;
-        long c = 0;
-        if (r>11*12) {
+        int n = sc.nextInt();
+        int a = n/(12*12);
+        int r = n%(12*12);
+        int b = 0;
+        int c = 0;
+        if (r>=11*12+2) {
             a++;
         } else {
             b = (n-12*12*a)/12;
             r = (n-12*12*a)%12;
-            if (r>=9) {
+            if (r>=10) {
                 b++;
             } else {
                 c = (n-12*12*a-12*b);
