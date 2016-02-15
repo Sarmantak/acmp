@@ -22,8 +22,7 @@ public class Main {
         int min = Math.min(x, y);
         int max = Math.max(x, y);
         n--;
-        //int t = (int) (min + Math.max(Math.round((double)(n*max)/(x+y)),Math.round((double)(n*min)/(x+y))));
-        int t =
+        int t = (int) (min + Math.max(Math.round((double)(n*max)/(x+y)),Math.round((double)(n*min)/(x+y))));
         pw.print(t);
         pw.flush();
     }
